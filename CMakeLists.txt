@@ -26,6 +26,9 @@ find_package(Eigen3 REQUIRED NO_MODULE)
 
 #enable_testing()
 
-add_executable(3dscanner src/main.cpp)
+add_executable(
+   3dscanner
+   src/RotatingLaserPlaneSolver.cpp
+   src/main.cpp)
 target_link_libraries(3dscanner Eigen3::Eigen)
 
